@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 60%;
+}
+
+body,h1,h2,ul{
+    margin: 0;
+    padding:0;
+}
+
+.arkaplan
+{
+   background-color: antiquewhite;
+}
+
+.container
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.top  /*bu kısmı flex yaparak li-leri yan yana getirmeye çalışacağım:)*/
+{
+    display: flex; /*esnek bir nesne haline getiriyoruz*/
+    justify-content: space-between;
+    align-items: center;
+     min-height: 200px;
+}
+
+.top .menu
+{
+    background-color: rgba(254, 244, 244,0.5);
+    border-radius: 20px;
+    border-style:inset
+
+
+}
+
+.top .menu ul{
+    display: flex;
+    margin: 0 10px;
+    width: 1000px;
+    justify-content: space-between;
+
+}
+.top .menu ul a{
+    color:brown;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 20px;
+    
+}
+.top .menu ul a:hover{
+    color: rgb(255, 182, 182);
+}
+
+.top .logo{
+    text-align: center;
+    color: brown;
+}
+
+.top .logo h1{
+    font-size: 34px;
+
+}
+
+.top .logo h2{
+    font-size: 45px;
+    letter-spacing:.5rem;
+}
+
+ul{
+    list-style: none; /*ul nin başındaki disci kaldırdık*/
+}
+/*.navbar{
+    display: flex;
+    float:right;
+    border-color: brown;
+    
+} */
+.middle .bolum1{
+    margin: 1px; /*kapak resmine üstten 10pxlik boşluk verdim*/
+    padding: 1px;
+    vertical-align: bottom;
+   
+}
+/*bolum2 alttaki 3 resim*/
+.middle .bolum2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.middle .bolum2 .box{
+    flex-basis: 290px;
+}
+.middle .bolum2 .box h2{
+    font-size: 2rem;
+}
+.middle .bolum2 .box p{
+    font-size: 1.6rem;
+}
+/*.middle .bolum3{
+    display: flex;
+    gap: 20px; /*nesneler arası boşluk vermek için kullanılır..resim ve yazı arası boşluk*/
+   /* justify-content: space-between; }*/
+
+
+/*.middle .bolum3 h1{
+    font-size: 2.5rem;
+}
+.middle .bolum3 p{
+    font-size: 1.6rem;
+}*/
+.middle .bolum3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.middle .bolum3 .box{
+    flex-basis: 290px;
+}
+.middle .bolum2 .box h2{
+    font-size: 2rem;
+}
+.middle .bolum3 .box p{
+    font-size: 1.6rem;
+}
+.cizgi{
+border-top: dotted 1px #fada;
+margin: 20px 0;
+}
+#onecıkanlar{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 1.8em;
+    color: black;
+    margin-top: 0px;
+    background: url(images/bg-baslik.png) no-repeat bottom center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#yenieklenenler
+{
+    text-align: center;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 1.8em;
+    color: black;
+    margin-top: 20px;
+    background: url(images/bg-baslik.png) no-repeat bottom center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
